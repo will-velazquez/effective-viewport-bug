@@ -1,0 +1,22 @@
+<Window
+    x:Class="effective_viewport_bug.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:effective_viewport_bug">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical">
+            <Button x:Name="myButton" Click="myButton_Click">New Window</Button>
+            <Button x:Name="myButton2" Click="myButton2_Click">Register event handler</Button>
+            <Button x:Name="myButton3" Click="myButton3_Click">Unregister</Button>
+        </StackPanel>
+        <TextBlock
+            x:Name="PART_DisclaimerText"
+            Grid.Row="1"
+            TextWrapping="WrapWholeWords"
+            Text="This window has nothing except this TextBlock" />
+    </Grid>
+</Window>

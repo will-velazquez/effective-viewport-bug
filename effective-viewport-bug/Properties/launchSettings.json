@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "effective-viewport-bug (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "effective-viewport-bug (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
